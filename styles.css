@@ -318,3 +318,46 @@ main {
     right: 0;
     top: 70%;
 }
+
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .highlights {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .static-bar {
+        flex-direction: column;
+        justify-content: center;
+        gap: 16px;
+        height: auto;
+        margin-top: 32px;
+    }
+
+    .static-bar__item {
+        margin: 20px 0;
+    }
+    .highlights__image {
+        width: 400px;
+    }
+
+    .highlights_arrow {
+        display: none;
+    }
+    .highlights__image {
+        align-self: flex-start;
+    }
+
+    .image-absolute {
+        top: 90%;
+        width: 50px;
+    }
+    .options {
+        top: 32px;
+    }
+}
