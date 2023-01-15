@@ -5,6 +5,10 @@
     font-family: 'Lato', sans-serif;
 }
 
+body {
+    background-color: #f7efed;
+}
+
 .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -68,6 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
 }
 
 .highlights_content {
@@ -91,6 +96,11 @@
     opacity: 30%;
     font-size: 24px;
     margin-bottom: 56px;
+}
+
+.highlights_arrow {
+    position: absolute;
+    z-index: -1;
 }
 
 .cart {
@@ -226,19 +236,85 @@ main {
 .static-bar {
     width: 100%;
     max-width: 1240px;
+    height: 205px;
     background-color: #236754;
     border-radius: 30px 30px 0 0;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     padding: 20px 80px;
+    position: relative;
 }
 
 .static-bar__item {
     width: 100%;
-    max-width: 304px;
+    max-width: 217px;
     background-color: #ffffff;
     border-radius: 24px;
     padding: 17px 9px;
     position: relative;
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.static-bar__info h4 {
+    margin-bottom: 8px;
+    font-size: 16px;
+}
+
+.static-bar__image {
+    position: absolute;
+    left: -80px;
+}
+
+.static-bar__box {
+    display: flex;
+}
+
+.static-bar__star {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+} 
+
+.static-bar__price {
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.static-bar__button {
+    width: 100%;
+    max-width: 118px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    background-color: #ffd154;
+    height: 32px;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.static-bar__button:hover {
+    opacity: 0.9;
+}
+
+.static-bar__float-image {
+    position: absolute;
+    left: -130px;
+    top: -130px;
+    z-index: -1;
+}
+
+.image-absolute {
+    position: absolute;
+    right: 0;
+    top: 70%;
 }
